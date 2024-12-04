@@ -13,7 +13,7 @@ local content = file:read("a")
 print(content)
 
 -- Closing the file
-file:close()
+file:close() 
 
 function WriteFile(text)
     local file = io.open("Module_02/data.txt", "w")
@@ -24,3 +24,21 @@ end
 WriteFile([[The
 Ultimate
 KEKW]])
+
+-- OS
+-- os.clock(), os.date([format, time]), os.difftime(t2,t1)
+-- os.execute([command]), os.exit([code]), os.getenv(varname)
+-- os.remove(filenmae), os.rename(oldname, newname), os.time([table])
+-- os.date()
+print("OS METHODS")
+
+
+local date = os.date()
+print(date)
+
+print(os.clock())
+print(os.time())
+-- print(os.execute("mkdir teste"))
+-- print(os.remove())
+
+print(os.exit())
